@@ -1,6 +1,18 @@
+
+// key-value pairs to generate license badges from options provided to user (licenses used are the most common on Github according to Github data)
+const licenses = {
+  Apache: "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+  MIT: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+  BSD3: "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
+  BSD2: "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)"
+}
+
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -16,5 +28,43 @@ function generateMarkdown(data) {
 
 `;
 }
+
+const generateREADME = ({ title, description, tableContents, install, usage, license, credits, tests, contact }) => {
+  `#${title}
+
+
+  ##Description
+
+  ${description}
+  
+  ##Table of Contents
+
+  ${tableContents}
+  
+  ##Installation
+
+  ${install}
+  
+  ##Usage
+
+  ${usage}
+  
+  ##License
+
+  ${license}
+  
+  ##Credits
+
+  ${credits}
+  
+  ##Tests
+  
+  ${tests}
+
+  ##Contact Information`
+
+  ${ contact }
+}
+
 
 module.exports = generateMarkdown;
