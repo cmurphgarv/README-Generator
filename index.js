@@ -18,11 +18,6 @@ function promptUser() {
         },
         {
             type: 'input',
-            name: 'tableContents',
-            message: 'Table of Contents for your README, if needed',
-        },
-        {
-            type: 'input',
             name: 'install',
             message: 'How do you install your project?',
         },
@@ -48,8 +43,13 @@ function promptUser() {
         },
         {
             type: 'input',
-            name: 'contact',
-            message: 'How to contact you with questions about the app?',
+            name: 'email',
+            message: 'What is your email?',
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your github username?',
         },
     ])
 }

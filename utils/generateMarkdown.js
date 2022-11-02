@@ -27,8 +27,13 @@ function renderLicenseSection(license) {
   }
 }
 
+//function to create link for github profile
+function renderGithub(github) {
+    return `https://github.com/${github}`
+}
+
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({ title, description, tableContents, install, usage, license, credits, tests, contact }) {
+function generateMarkdown({ title, description, install, usage, license, credits, tests, github, email }) {
  return `# ${title}
  ${renderLicenseBadge(license)}
 
@@ -39,7 +44,13 @@ function generateMarkdown({ title, description, tableContents, install, usage, l
   
   ## Table of Contents
 
-  ${tableContents}
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Credits](#credits)
+  - [Tests](#tests)
+  - [Contact](#contact)
   
   ## Installation
 
@@ -61,9 +72,11 @@ function generateMarkdown({ title, description, tableContents, install, usage, l
   
   ${tests}
 
-  ## Contact Information
+  ## Contact
 
-  ${contact}`
+  ${renderGithub(github)}
+
+  ${email}`
 
 ;
 }

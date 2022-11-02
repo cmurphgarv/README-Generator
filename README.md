@@ -1,35 +1,43 @@
-#ksdjnfknfk
+# README Generator
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-  ##Description
+  ## Description
 
-  ksdfnkdjfnj
+  Program to generate professional README files for code repositories
   
-  ##Table of Contents
+  ## Table of Contents
 
-  ksdfkfns
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Credits](#credits)
+  - [Tests](#tests)
+  - [Contact](#contact)
   
-  ##Installation
+  ## Installation
 
-  dkjsfsknfj
+  npm install
   
-  ##Usage
+  ## Usage
 
-  ksdjnfkj
+  To create professional looking READMEs for code repositories to describe applications for new users
   
-  ##License
+  ## License
 
   This project is licensed under the MIT license
   
-  ##Credits
+  ## Credits
 
-  skdjfskndf
+  Charlotte Murphey
   
-  ##Tests
+  ## Tests
   
-  ksdjfknfs
+  No tests required
 
-  ##Contact Information
+  ## Contact
 
-  skdjfnksd
+  https://github.com/cmurphgarv
+
+  murphey.charlotte@gmail.com
