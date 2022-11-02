@@ -8,7 +8,7 @@ const licenses = {
 }
 
 // function returns a badge that includes the license link in the badge
-function renderLicense(license) {
+function renderLicenseBadge(license) {
   if(license == "") {
     return ""
   } else {
@@ -19,17 +19,18 @@ function renderLicense(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if(license == "") {
+    return ""
+  } else {
+    return `This project is licensed under the ${license} license`
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown({ title, description, tableContents, install, usage, license, credits, tests, contact }) {
-  return `# ${data.title}
-
-`;
-}
-
-
-  `#${title}
+ return `#${title}
+ ${renderLicenseBadge(license)}
 
 
   ##Description
@@ -50,7 +51,7 @@ function generateMarkdown({ title, description, tableContents, install, usage, l
   
   ##License
 
-  ${license}
+  ${renderLicenseSection(license)}
   
   ##Credits
 
@@ -64,7 +65,7 @@ function generateMarkdown({ title, description, tableContents, install, usage, l
 
   ${contact}`
 
-
-
+;
+}
 
 module.exports = generateMarkdown;
